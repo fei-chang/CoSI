@@ -1,0 +1,21 @@
+stage_name: 'eval_gp_static'
+freeze_gaze_backbone: true
+num_epochs: 1
+save_every: 1
+
+
+weights:
+  heatmap: 0
+  inout: 0
+  pattern: 1
+
+# dataset details
+batch_size: 32
+num_workers: 8
+pin_memory: true
+prefetch_factor: 1
+persistent_workers: true
+
+dataset_name: "gp_static"
+pattern_type: 'multi_class' 
+save_best_metrics: "pattern_Acc" #Options: AUC, pattern_Acc, l2_dist

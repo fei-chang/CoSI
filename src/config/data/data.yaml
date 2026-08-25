@@ -1,0 +1,58 @@
+data_root: "/data1/GazeData"
+
+transform:
+  input_resolution: 448
+  output_resolution: 64
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+
+mask:
+  mask_scene: true
+  mask_head: false
+  max_scene_patches_ratio: 0.5
+  max_head_patches_ratio: 0.3
+  mask_prob: 0.5
+
+datasets:
+  dyadic:
+    frames:
+      train: "${data_root}/D_DyadicGaze/frames"
+      val: "${data_root}/D_DyadicGaze/frames"
+    annotations:
+      train: "${data_root}/D_DyadicGaze/annotations/train_annotations.csv"
+      val: "${data_root}/D_DyadicGaze/annotations/test_annotations.csv"
+
+  gazefollow:
+    frames:
+      train: "${data_root}/D_gazefollow_extended/frames"
+      val: "${data_root}/D_gazefollow_extended/frames"
+    annotations:
+      train: "${data_root}/D_gazefollow_extended/train_annotations_release.txt"
+      val: "${data_root}/D_gazefollow_extended/test_annotations_release.txt"
+    # head_heatmaps: "${data_root}/D_gazefollow_extended/head_masks"
+
+  gp_static:
+    frames: 
+      train: "${data_root}/D_GPStatic/frames/train"
+      val: "${data_root}/D_GPStatic/frames/test"
+    annotations:
+      train: "${data_root}/D_GPStatic/annotations/train_annotations.csv"
+      val: "${data_root}/D_GPStatic/annotations/test_annotations.csv"
+
+
+  laeo:
+    frames:
+      train: "${data_root}/D_LAEO-UCO/frames"
+      val: "${data_root}/D_LAEO-UCO/frames"
+    annotations:
+      train: "${data_root}/D_LAEO-UCO/annotations/pair_train_annotations.csv"
+      val: "${data_root}/D_LAEO-UCO/annotations/pair_test_annotations.csv"
+
+
+  coatt:
+    frames:
+      train: "${data_root}/D_VideoCoAtt/images"
+      val: "${data_root}/D_VideoCoAtt/images"
+    annotations:
+      train: "${data_root}/D_VideoCoAtt/annotations/pair_train_annotations.csv"
+      val: "${data_root}/D_VideoCoAtt/annotations/pair_test_annotations.csv"

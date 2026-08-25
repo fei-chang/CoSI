@@ -1,0 +1,23 @@
+# CoSi Model Configuration
+model_name: cosi
+# Model Architecture Parameters
+patch_size: 16
+dim: 256  # Feature dimension for transformer
+num_layers: 3  # Number of transformer layers
+
+# Backbone configuration (DINOv2)
+backbone:
+  name: "dinov2_vitb14"
+  load_local: true
+  local_dir: '/home/changfei/.cache/torch/hub/facebookresearch_dinov2_main'
+
+integration: "confidence_coordinated" 
+conf_thres: 0.5 # effective for confidence_gate / confidence_weighted 
+#Options: context, spatial, confidence_coordinated, concated, confidence_gate, confidence_weighted
+freeze_spatial: false
+
+spatial_relator:
+  indices_dict: {
+            'principal': [2, 3, 4],
+            'associate': [2, 4, 3]
+        }

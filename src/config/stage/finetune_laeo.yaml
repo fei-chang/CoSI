@@ -1,0 +1,25 @@
+stage_name: 'finetune_laeo'
+freeze_gaze_backbone: false
+num_epochs: 10
+save_every: 1
+
+optimizer:
+  lr: 1e-4
+  weight_decay: 0
+  warm_up_epochs: 0
+weights:
+  heatmap: 0
+  inout: 0
+  pattern: 10
+
+# dataset details
+batch_size: 128
+num_workers: 8
+pin_memory: true
+prefetch_factor: 1
+persistent_workers: true
+
+dataset_name: "laeo" 
+pattern_type: 'binary_mutual' 
+save_best_only: false
+save_best_metrics: "pattern_AP" #Options: AUC, l2_dist, pattern_Acc, pattern_AP, pattern_AUC

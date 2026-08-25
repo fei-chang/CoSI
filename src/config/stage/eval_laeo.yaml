@@ -1,0 +1,21 @@
+stage_name: 'eval_laeo'
+freeze_gaze_backbone: true
+num_epochs: 1
+save_every: 1
+
+
+weights:
+  heatmap: 0
+  inout: 0
+  pattern: 1
+
+# dataset details
+batch_size: 32
+num_workers: 8
+pin_memory: true
+prefetch_factor: 1
+persistent_workers: true
+
+dataset_name: "laeo"
+pattern_type: 'binary_mutual' 
+save_best_metrics: "pattern_AP" #Options: AUC, l2_dist, pattern_Acc, pattern_AP, pattern_AUC
