@@ -143,7 +143,7 @@ We sincerely appreciate the authors and maintainers of these projects.
 Following are open-source projects discussed in our paper. They provide valuable contributions to gaze following and social gaze prediction:
 
 - MTGS: A Novel Framework for Multi-Person Temporal Gaze Following and Social Gaze Prediction [[paper](https://openreview.net/forum?id=ALU676zGFE)]
-[[project]((https://github.com/idiap/MTGS))]
+[[project](https://github.com/idiap/MTGS)]
 - Sharingan: A Transformer Architecture for Multi-Person Gaze Following [[paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Tafasca_Sharingan_A_Transformer_Architecture_for_Multi-Person_Gaze_Following_CVPR_2024_paper.pdf)]
 [[project](https://github.com/idiap/sharingan)]
 - ViTGaze: Gaze Following with Interaction Features in Vision Transformers [[paper](https://link.springer.com/article/10.1007/s44267-024-00064-9)] [[project](https://github.com/hustvl/ViTGaze)]
