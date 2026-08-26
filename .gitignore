@@ -5,3 +5,4 @@
 */*.pth
 */*.pt
 *.DS_Store
+/predictions/*
