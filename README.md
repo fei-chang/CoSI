@@ -150,6 +150,11 @@ Following are open-source projects discussed in our paper. They provide valuable
 
 We encourage readers to explore these repositories. We thank the authors' contributions to the field.
 
+## SeetaPsych
+CoSI-Gaze has been integrated in [SeetaPsych](https://github.com/seetapsych), an open-source ecosystem for computational analysis of human behavioral and psychological signals. In particular, [SeetaPsych Gaze Follow](https://github.com/seetapsych/seetapsych-gaze-follow) integrates CoSI-Gaze for gaze following and social gaze prediction.
+
+We encourage readers interested in related applications and tools to explore the broader [SeetaPsych](https://github.com/seetapsych) ecosystem.
+
 ## Citation
 
 If you find this work useful, please consider citing:
